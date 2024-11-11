@@ -1,0 +1,48 @@
+{
+  "title": "create a form or update",
+  "type": "object",
+  "properties": {
+    "body": {
+      "type": "object",
+      "properties": {
+        "form": {
+          "type": "object",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "minLength": 1
+            },
+            "lastName": {
+              "type": "string",
+              "minLength": 1
+            },
+            "dateOfBirth": {
+              "type": "string",
+              "format": "date"
+            },
+            "country": {
+              "type": "string",
+              "minLength": 1
+            },
+            "profession": {
+              "type": "string"
+            },
+            "yearsInProfession": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "firstName",
+            "lastName",
+            "dateOfBirth",
+            "country"
+          ]
+        }
+      },
+        "required": ["form"]
+    }
+  },
+  "required": [
+    "body"
+  ]
+}

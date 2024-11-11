@@ -1,0 +1,23 @@
+# Logs
+logs
+*.log
+
+client/node_modules
+api/node_modules
+.DS_Store
+client/dist
+*.local
+
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
+client/*.env
+api/config/env/*.env
+
